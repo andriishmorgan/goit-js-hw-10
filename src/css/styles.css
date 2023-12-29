@@ -21,6 +21,8 @@
   -webkit-text-size-adjust: 100%;
 }
 
+/* Timer */
+
 .main-container {
   display: flex;
   align-items: flex-start;
@@ -106,4 +108,100 @@
   font-weight: 400;
   line-height: 24px; /* 150% */
   text-transform: uppercase;
+}
+
+/* Snackbar */
+
+.form {
+  margin-top: 36px;
+  margin-left: 156px;
+  border: 1px solid transparent;
+  transition: border 0.3s;
+}
+.delay-input:hover {
+  border: 1px solid #000;
+}
+
+.delay-label {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-center;
+  gap: 8px;
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+.delay-input {
+  display: flex;
+  width: 360px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding-left: 24px;
+}
+.state-fieldset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  margin-top: 16px;
+  width: 360px;
+  height: 78px;
+  flex-shrink: 0;
+  stroke-width: 1px;
+  stroke: #808080;
+}
+.state-fieldset:hover {
+  stroke: #000;
+}
+
+.state-text {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+.btn-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.label-input-text {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.notification-btn {
+  display: flex;
+  width: 390px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #4e75ff;
+  margin-top: 24px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+  transition: background 0.3s;
+}
+.notification-btn:hover {
+  background: #6c8cff; /* Додано */
 }
