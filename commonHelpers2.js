@@ -1,0 +1,2 @@
+import"./assets/styles-3dacbfd4.js";import{i}from"./assets/vendor-651d7991.js";const o=document.querySelector("form");document.querySelector("button");o.addEventListener("submit",e=>{e.preventDefault();const s=parseInt(o.delay.value,10),r=o.state.value;n(s,r)});function n(e,s){new Promise((t,m)=>{setTimeout(()=>{s==="fulfilled"?t(e):s==="rejected"&&m(e)},e)}).then(t=>{i.success({title:"Success",message:`✅ Fulfilled promise in ${t}ms`})}).catch(t=>{i.error({title:"Error",message:`❌ Rejected promise in ${t}ms`})})}
+//# sourceMappingURL=commonHelpers2.js.map
