@@ -9,10 +9,10 @@ promiseForm.addEventListener('submit',
         e.preventDefault();
         const delay = parseInt(promiseForm.delay.value, 10);
     const state = promiseForm.state.value;
-managePromise(delay, state);
+        managePromise(delay, state, e);
     });
 
-    function managePromise(delay, state) {
+    function managePromise(delay, state, e) {
     const promise = new Promise((resolve, reject) => {
         setTimeout(() => {
             if (state === 'fulfilled') {
@@ -36,4 +36,5 @@ managePromise(delay, state);
                 message: `❌ Rejected promise in ${delay}ms`
             });
         });
+        e.currentTarget.reset();
 }

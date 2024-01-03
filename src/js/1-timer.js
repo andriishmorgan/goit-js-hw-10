@@ -34,9 +34,6 @@ const options = {
       });
         userSelectedDate = selectedDates[0];
         button.removeAttribute("disabled");
-         if (!timeInterval) {
-        startTimer();
-      }
     }
   }
 };
@@ -46,12 +43,12 @@ const datetimePicker = flatpickr(input, options);
 button.addEventListener('click', () => {
     const selectedDateTime = userSelectedDate.getTime();
 
-    timeInterval = setInterval(() => {
-        const currentDateTime = new Date().getTime();
+    const intervalId = setInterval(() => {
+        const currentDateTime = Date.now();
         let timeDifference = selectedDateTime - currentDateTime;
 
         if (timeDifference <= 0) {
-            clearInterval(timerInterval);
+            clearInterval(intervalId);
           timeDifference = 0;
         }
 
